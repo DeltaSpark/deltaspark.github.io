@@ -75,3 +75,27 @@ section {
 	80% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+.aboutme-block {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color:black;
+}
+
+.social-twitter:hover {
+    color: #00aced;
+}
+
+.social-linkedin:hover {
+    color: #007bb6;
+}
+
+.social-github:hover {
+    color: rebeccapurple;
+}
+
+.social-angellist:hover {
+    color:darkgreen;
+}
