@@ -3,3 +3,8 @@ $(document).ready(function () {
         $(".navbar-collapse").collapse('hide');
     });
 });
+
+$(function(){
+	// Instantiate MixItUp:
+	$('.mixitupcontainer').mixItUp();
+});

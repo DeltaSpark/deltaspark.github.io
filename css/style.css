@@ -26,12 +26,12 @@ section {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-
 .flex-item {
-  margin: 10px auto;
+  margin: 10px;
+    max-width: 192px;
 }
 
 .rotate{
@@ -99,4 +99,8 @@ section {
 
 .profile-image {
     max-height: 192px;
+}
+
+.mixitupcontainer .mix{
+	display: none;
 }
