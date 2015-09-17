@@ -95,3 +95,8 @@ section {
 .social-angellist:hover {
     color:darkgreen;
 }
+
+
+.profile-image {
+    max-height: 192px;
+}
