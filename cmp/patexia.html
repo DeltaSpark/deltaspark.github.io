@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     
-    <script async type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script async type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script async src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    <script async type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </head>
 
 <body>
@@ -82,23 +82,30 @@
                 <p>
                   <label>categorize by:</label>
                   <button class="filter btn btn-primary" data-filter="all">All</button>
-                  <button class="filter btn btn-primary" data-filter=".category-1">Category 1</button>
-                  <button class="filter btn btn-primary" data-filter=".category-2">Category 2</button>
+                  <button class="filter btn btn-primary" data-filter=".product">Product</button>
+                  <button class="filter btn btn-primary" data-filter=".operations">Operations</button>
+                  <button class="filter btn btn-primary" data-filter=".management">Management</button>
+                  <button class="filter btn btn-primary" data-filter=".writing">Writing</button>
+                  <button class="filter btn btn-primary" data-filter=".design">Design</button>
+                  <button class="filter btn btn-primary" data-filter=".coding">Coding</button>
                 </p>
             </div>
             <div class="mixitupcontainer flex-container text-center">
-                <div class="mix category-1 flex-item"><i class="fa fa-briefcase fa-fw fa-5x"></i><p>managed from design to close 84 crowdsourcing studies with a 100% on-time delivery rate and 75% overall client satisfaction rate</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-calendar-check-o fa-fw fa-5x"></i><p>supervised the design and close of an additional 25 crowdsourcing studies</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-ticket fa-fw fa-5x"></i><p>authored tickets/project scopes in JIRA/Confluence for 25 releases</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-rocket fa-fw fa-5x"></i><p>launched from design to production Patexia’s: consulting web platform, user points and badging, contest entry review and feedback system, inter partes review cases db addition</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-pencil-square-o fa-fw fa-5x"></i><p>wrote the book on Patexia’s case research process</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-trophy fa-fw fa-5x"></i><p>created the market research, patent mining, evidence of use, and private contest types</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-question fa-fw fa-5x"></i><p>wrote help documentation for users</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-picture-o fa-fw fa-5x"></i><p>designed infographics to onboard users</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-table fa-fw fa-5x"></i><p>mass analyzed 5,000 patent litigation cases for trends to assist sales</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-database fa-fw fa-5x"></i><p>managed team to update and maintain patent db</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-institution fa-fw fa-5x"></i><p>wrote the technical and past performance sections of a NASA RFP that was awarded</p></div>
-                <div class="mix category-2 flex-item"><i class="fa fa-google fa-fw fa-5x"></i><p>pushed custom Google Apps spreadsheet plugin</p></div>
+                <div class="mix operations portfolio-flex-item"><i class="fa fa-briefcase fa-fw fa-5x"></i><p>managed from design to close 84 crowdsourcing studies with a 75% overall client satisfaction rate</p></div>
+                <div class="mix operations management portfolio-flex-item"><i class="fa fa-calendar-check-o fa-fw fa-5x"></i><p>supervised the design and close of an additional 25 crowdsourcing studies</p></div>
+                <div class="mix product writing design portfolio-flex-item"><i class="fa fa-ticket fa-fw fa-5x"></i><p>authored tickets/project scopes in JIRA/Confluence for 25 releases</p></div>
+                <div class="mix product portfolio-flex-item"><i class="fa fa-globe fa-fw fa-5x"></i><p>launched from design to production: Patexia’s consulting web platform</p></div>
+                <div class="mix product portfolio-flex-item"><i class="fa fa-certificate fa-fw fa-5x"></i><p>launched from design to production: user points and badging</p></div>
+                <div class="mix product portfolio-flex-item"><i class="fa fa-comment fa-fw fa-5x"></i><p>launched from design to production: contest entry review and feedback system</p></div>
+                <div class="mix product portfolio-flex-item"><i class="fa fa-gavel fa-fw fa-5x"></i><p>launched from design to production: inter partes review cases db addition</p></div>
+                <div class="mix operations management writing portfolio-flex-item"><i class="fa fa-pencil-square-o fa-fw fa-5x"></i><p>wrote the book on Patexia’s case research process</p></div>
+                <div class="mix operations portfolio-flex-item"><i class="fa fa-trophy fa-fw fa-5x"></i><p>created the market research, patent mining, evidence of use, and private contest types</p></div>
+                <div class="mix product writing portfolio-flex-item"><i class="fa fa-question fa-fw fa-5x"></i><p>wrote help documentation for users</p></div>
+                <div class="mix product design portfolio-flex-item"><i class="fa fa-picture-o fa-fw fa-5x"></i><p>designed infographics to onboard users</p></div>
+                <div class="mix coding portfolio-flex-item"><i class="fa fa-table fa-fw fa-5x"></i><p>mass analyzed 5,000 patent litigation cases for trends to assist sales</p></div>
+                <div class="mix operations management portfolio-flex-item"><i class="fa fa-database fa-fw fa-5x"></i><p>managed team to update and maintain patent db</p></div>
+                <div class="mix writing portfolio-flex-item"><i class="fa fa-institution fa-fw fa-5x"></i><p>wrote the technical and past performance sections of a NASA RFP that was awarded</p></div>
+                <div class="mix coding portfolio-flex-item"><i class="fa fa-google fa-fw fa-5x"></i><p>pushed custom Google Apps spreadsheet plugin</p></div>
             </div>
         </div>
         <!-- Pagination -->
@@ -127,7 +134,7 @@
     <!-- Bottom footer -->
     <footer>
       <div class="container">
-        <p class="navbar-text text-muted">Built from scratch using <a href="//pages.github.com" target="_blank">GitHub Pages</a>, <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, and <a href="//fontawesome.io" target="_blank">Font Awesome</a>. Check out the <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank">source code here</a>.</p>
+        <p class="navbar-text text-muted">Built from scratch using <a href="//pages.github.com" target="_blank">GitHub Pages</a>, <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="//fontawesome.io" target="_blank">Font Awesome</a>, and <a href="//mixitup.kunkalabs.com/" target="_blank">MixItUp 2</a>. Check out the <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank">source code here</a>.</p>
       </div>
     </footer>
 
