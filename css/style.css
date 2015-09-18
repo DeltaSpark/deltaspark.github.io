@@ -206,3 +206,7 @@ section {
     max-height: 192px;
     max-width: 256px;
 }
+
+.nav-arrow {
+    color: black;
+}

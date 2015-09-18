@@ -31,15 +31,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="pull-left" href="#"><img alt="AC" src="./img/andy-chu.png" class="img-responsive"></a>
+          <a class="pull-left" href="#intro"><img alt="AC" src="./img/andy-chu.png" class="img-responsive"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#whereiveworked">Where I've Worked</a></li>
             <li><a href="#whatido">What I Do</a></li>
+            <li><a href="#whereiveworked">Where I've Worked</a></li>
             <li><a href="#letstalk">Let's Talk</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -47,22 +47,28 @@
     </nav>
     
     <div class="container">
-        <div class="jumbotron text-center leader">
-            <h2>i <i class="fa fa-heart fa-lg"></i> product</h2>
-            <h2>Hi! I'm Andy and I’m a product manager with startup experience.</h2>
-            <h2>My passion is to take all the 
-            <div class="rotate rotate-words">
-                <span class="rotate-words">user feedback</span>
-                <span class="rotate-words">feature requests</span>
-                <span class="rotate-words">user surveys</span>
-                <span class="rotate-words">brainstorms</span>
-                <span class="rotate-words">user analytics</span>
-                <span class="rotate-words">A/B testing</span>
-          </div><span class="rotate-block">offsetdummies</span><br>
-               and make something awesome.</h2>
-            <img src="//placehold.it/500x100" class="center-block img-responsive" alt="Bringing details together">
-            <i class="fa fa-angle-down fa-3x"></i>
-        </div>
+        
+        <!-- Intro - Jumbotron -->
+        <section id="intro">
+            <div class="jumbotron text-center leader">
+                <h2>i <i class="fa fa-heart fa-lg"></i> product</h2>
+                <h2>Hi! I'm Andy and I’m a product manager with startup experience.</h2>
+                <h2>My passion is to take all the 
+                <div class="rotate rotate-words">
+                    <span class="rotate-words">user feedback</span>
+                    <span class="rotate-words">feature requests</span>
+                    <span class="rotate-words">user surveys</span>
+                    <span class="rotate-words">brainstorms</span>
+                    <span class="rotate-words">user analytics</span>
+                    <span class="rotate-words">A/B testing</span>
+              </div><span class="rotate-block">offsetdummies</span><br>
+                   and make something awesome.</h2>
+                <img src="//placehold.it/500x100" class="center-block img-responsive" alt="Bringing details together">
+                <div class="tada"><a class="nav-arrow" href="#aboutme"><i class="fa fa-angle-down fa-3x"></i></a></div>
+            </div>
+        </section>
+        
+        <!-- About Me -->
         <section id="aboutme">
         <div class="row section-header">
             <div class="col-md-12 text-center">
@@ -110,6 +116,8 @@
             </div>
         </div>
         </section>
+        
+        <!-- What I Do -->
         <section id="whatido">
         <div class="row section-header">
             <div class="col-md-12 text-center">
@@ -120,37 +128,39 @@
             <div class="col-md-6 col-xs-12">
                 <img src="./img/patexia.png" alt="Patexia Inc." class="img-responsive center-block">
                 <p>As a Case Research Manager at Patexia, I work at a two-sided market startup to leverage our community of subject matter experts on one hand, in order to crowdsource solutions to vexing IP and technological problems for our corporate clients including Fortune 500 companies and government agencies.</p>
-                <p class="text-right"><a class="btn btn-default" href="./cmp/patexia.html" target="_blank" role="button">Learn More</a></p>
+                <p class="text-right"><a class="btn btn-primary" href="./cmp/patexia.html" role="button">Learn More</a></p>
             </div>
             <div class="col-md-6 col-xs-12">
                 <img src="./img/scoutfitters.png" alt="SC Outfitters" class="img-responsive center-block">
                 <p>With SC Outfitters, I serve on the Alumni Advisory Board where I can contribute the lessons I’ve learned in product development to help the student organization continue to offer outdoor adventures to the USC student body.</p>
-                <p class="text-right"><a class="btn btn-default" href="./cmp/scoutfitters.html" target="_blank" role="button">Learn More</a></p>
+                <p class="text-right"><a class="btn btn-primary" href="./cmp/scoutfitters.html" role="button">Learn More</a></p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <p>Here’s the tools and skills that are in my personal toolbox:
-                <span class="label label-primary">working with a distributed team (Upwork)</span>
-                <span class="label label-primary">ticketing (JIRA)</span>
-                <span class="label label-primary">project scoping (Confluence)</span>
-                <span class="label label-primary">wireframing (Balsamiq/InVision)</span>
-                <span class="label label-primary">process design (Visio)</span>
-                <span class="label label-primary">graphics design (GIMP 2)</span>
-                <span class="label label-primary">infographics design (Visio)</span>
-                <span class="label label-primary">data analysis (MATLAB)</span>
-                <span class="label label-primary">coding Google Apps add-ons (javascript)</span>
-                <span class="label label-primary">HTML email design (HTML)</span>
-                <span class="label label-primary">passive/real time user tracking (Google Analytics)</span>
-                <span class="label label-primary">two-sided markets</span>
-                <span class="label label-primary">web scraping</span>
-                <span class="label label-primary">public speaking</span>
-                <span class="label label-primary">teaching</span>
-                <span class="label label-primary">motion capture (flock of birds)</span>
-                <span class="label label-primary">computer vision (Kinect/LabVIEW)</span></p>
+                <span class="label label-default">working with a distributed team (Upwork)</span>
+                <span class="label label-default">ticketing (JIRA)</span>
+                <span class="label label-default">project scoping (Confluence)</span>
+                <span class="label label-default">wireframing (Balsamiq/InVision)</span>
+                <span class="label label-default">process design (Visio)</span>
+                <span class="label label-default">graphics design (GIMP 2)</span>
+                <span class="label label-default">infographics design (Visio)</span>
+                <span class="label label-default">data analysis (MATLAB)</span>
+                <span class="label label-default">coding Google Apps add-ons (javascript)</span>
+                <span class="label label-default">HTML email design (HTML)</span>
+                <span class="label label-default">passive/real time user tracking (Google Analytics)</span>
+                <span class="label label-default">two-sided markets</span>
+                <span class="label label-default">web scraping</span>
+                <span class="label label-default">public speaking</span>
+                <span class="label label-default">teaching</span>
+                <span class="label label-default">motion capture (flock of birds)</span>
+                <span class="label label-default">computer vision (Kinect/LabVIEW)</span></p>
             </div>
         </div>
         </section>
+        
+        <!-- Where I've Worked -->
         <section id="whereiveworked">
         <div class="row section-header">
             <div class="col-md-12 text-center">
@@ -177,6 +187,8 @@
             </div>
         </div>
         </section>
+        
+        <!-- Let's Talk -->
         <section id="letstalk">
         <div class="row section-header">
             <div class="col-md-12 text-center">
