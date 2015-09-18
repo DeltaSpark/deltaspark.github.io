@@ -7,6 +7,14 @@ body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Ovo', serif;
+}
+
+p, ul {
+    font-family: 'Muli', sans-serif;
+}
+
 footer {
     color: #666;
     background: #f5f5f5;
@@ -38,8 +46,45 @@ section {
 .portfolio-flex-item {
     margin: 10px;
     max-width: 128px;
-    
 }
+
+.portfolio-wide-flex-item {
+    margin: 10px;
+    max-width: 192px;
+}
+
+.section-header {   
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 150px;
+    margin: 15px auto;
+}
+
+#aboutme .section-header {
+    background-image: url("../assets/aboutme.jpg");
+}
+
+#whereiveworked .section-header {
+    background-image: url("../assets/whereiveworked.jpg");
+}
+
+#whatido .section-header {
+    background-image: url("../assets/whatido.jpg");
+}
+
+#letstalk .section-header {
+    background-image: url("../assets/letstalk.jpg");
+}
+
+.section-header h1 {
+    display: inline-block;
+    margin: 45px auto;
+    float: none;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 .rotate{
 	display: inline;
 }
@@ -111,7 +156,7 @@ section {
 }
 
 .patexia-logo, .scoutfitters-logo, .camphisierra-logo, .uscviterbi-logo {
-	background-image: url('../img/company-logo-sprite.png');
+	background-image: url("../img/company-logo-sprite.png");
     background-repeat: no-repeat;
 	width: 256px;
 	height: 128px;
@@ -153,4 +198,11 @@ section {
 .uscviterbi-logo:hover {
 	background-position: -788px -5px;
     border-color: #990000;
+}
+
+.company-image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-height: 192px;
+    max-width: 256px;
 }
