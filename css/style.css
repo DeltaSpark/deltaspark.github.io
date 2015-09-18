@@ -31,7 +31,8 @@ section {
 
 .flex-item {
     margin: 10px;
-    max-width: 192px;
+	width: 260px;
+	height: 132px;
 }
 
 .portfolio-flex-item {
@@ -107,4 +108,49 @@ section {
 
 .mixitupcontainer .mix{
 	display: none;
+}
+
+.patexia-logo, .scoutfitters-logo, .camphisierra-logo, .uscviterbi-logo {
+	background-image: url('../img/company-logo-sprite.png');
+    background-repeat: no-repeat;
+	width: 256px;
+	height: 128px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.patexia-logo {
+	background-position: -5px -138px;
+}
+
+.patexia-logo:hover {
+	background-position: -5px -5px;
+    border-color: #2E92D9;
+}
+
+.scoutfitters-logo {
+	background-position: -266px -138px;
+}
+
+.scoutfitters-logo:hover {
+	background-position: -266px -5px;
+    border-color: #004A1D;
+}
+
+.camphisierra-logo {
+	background-position: -527px -138px;
+}
+
+.camphisierra-logo:hover {
+	background-position: -527px -5px;
+    border-color: #292279;
+}
+
+.uscviterbi-logo {
+	background-position: -788px -138px;
+}
+
+.uscviterbi-logo:hover {
+	background-position: -788px -5px;
+    border-color: #990000;
 }
