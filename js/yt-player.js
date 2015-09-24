@@ -1,4 +1,8 @@
-$('.close-modal').click(function () {
-    $('#yt-player').hide();
-    $('#yt-player iframe').attr("src", jQuery("#yt-player iframe").attr("src"));
+jQuery(document).bind('hidden.bs.modal', function() {
+    var vid = jQuery('#monologueForThree iframe[src*="youtube"]');
+    if ( vid.length > 0 ){
+        var src = vid.attr('src');
+        vid.attr('src', '');
+        vid.attr('src', src);
+    }
 });
