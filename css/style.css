@@ -53,6 +53,11 @@ section {
     max-width: 192px;
 }
 
+.infographic-flex-item {
+    margin: 10px;
+    max-width: 250px;
+}
+
 .section-header {   
     background-repeat: no-repeat;
     background-position: center; 
