@@ -1,3 +1,6 @@
+/* ==== PAGE STYLING DEFINITIONS ==== */
+
+/* == Height and position adjustments to accompodate for header navbar and footer bar == */
 html {
     height: 100%;
 }
@@ -7,14 +10,7 @@ body {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Merriweather', serif;
-}
-
-p, ul {
-    font-family: 'Muli', sans-serif;
-}
-
+/* Style customizations for the footer bar */
 footer {
     color: #666;
     background: #f5f5f5;
@@ -22,42 +18,22 @@ footer {
     font-size: 85%;
 }
 
+/* == Loads the Merriweather and Muli fonts for text == */
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+}
+p, ul {
+    font-family: 'Muli', sans-serif;
+}
+
+/* == Adds support for section navigation and styling == */
+/* Compensates for fixed top navbar */
 section {
-    padding-top:70px;
+    padding-top:70px; 
     margin-top:-70px;
 }
 
-.leader {
-    background: #ffffff;
-}
-
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.flex-item {
-    margin: 10px;
-	width: 260px;
-	height: 132px;
-}
-
-.portfolio-flex-item {
-    margin: 10px;
-    max-width: 128px;
-}
-
-.portfolio-wide-flex-item {
-    margin: 10px;
-    max-width: 192px;
-}
-
-.infographic-flex-item {
-    margin: 10px;
-    max-width: 250px;
-}
-
+/* Defines container for section headers and sets up for image background */
 .section-header {   
     background-repeat: no-repeat;
     background-position: center; 
@@ -65,22 +41,21 @@ section {
     margin: 15px auto;
 }
 
+/* Defines image background for each section on index.html */
 #aboutme .section-header {
     background-image: url("../assets/aboutme.jpg");
 }
-
 #whereiveworked .section-header {
     background-image: url("../assets/whereiveworked.jpg");
 }
-
 #whatido .section-header {
     background-image: url("../assets/whatido.jpg");
 }
-
 #letstalk .section-header {
     background-image: url("../assets/letstalk.jpg");
 }
 
+/* Styles box for section heading text */
 .section-header h1 {
     display: inline-block;
     margin: 45px auto;
@@ -90,6 +65,107 @@ section {
     border-radius: 10px;
 }
 
+/* == Styles image next to paragraph text on individual company pages == */
+.company-image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-height: 192px;
+    max-width: 256px;
+}
+
+
+/* ==== PAGE ASSET DEFINITIONS ==== */
+
+/* == Adds flexbox as an asset == */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* Default flex item, currently used in Where I've Worked */
+.flex-item {
+    margin: 10px;
+	width: 260px;
+	height: 132px;
+}
+
+/* Flex item for MixItUp containers with more than 4 items */
+.portfolio-flex-item {
+    margin: 10px;
+    max-width: 128px;
+}
+
+/* Flex item for MixItUp containers with less than 4 items */
+.portfolio-wide-flex-item {
+    margin: 10px;
+    max-width: 192px;
+}
+
+/* Flex item for Infographic Embed.ly Cards in Patexia */
+.infographic-flex-item {
+    margin: 10px;
+    max-width: 250px;
+}
+
+/* == Adds MixItUp portfolio area and defines that onload, containers are not displayed. Containers are made to appear in js files. == */
+.mixitupcontainer .mix{
+	display: none;
+}
+
+/* Adjusts MixItUp filter buttons to include some margin around buttons for mobile friendly touch targets*/
+.filter {
+    margin: 2px 1px;
+}
+
+/* Defines hover behavior for color version of logos using CSS sprites */
+.patexia-logo {
+	background-position: -5px -138px;
+}
+.patexia-logo:hover {
+	background-position: -5px -5px;
+    border-color: #2E92D9;
+}
+.scoutfitters-logo {
+	background-position: -266px -138px;
+}
+.scoutfitters-logo:hover {
+	background-position: -266px -5px;
+    border-color: #004A1D;
+}
+.camphisierra-logo {
+	background-position: -527px -138px;
+}
+.camphisierra-logo:hover {
+	background-position: -527px -5px;
+    border-color: #292279;
+}
+.uscviterbi-logo {
+	background-position: -788px -138px;
+}
+
+/* == Defines color for social icons from black (default) to color of the site on hover == */
+.social-icon {
+    color:black;
+}
+
+.social-twitter:hover {
+    color: #00aced;
+}
+.social-linkedin:hover {
+    color: #007bb6;
+}
+.social-github:hover {
+    color: darkslateblue;
+}
+.social-angellist:hover {
+    color:darkgreen;
+}
+
+
+/* ==== CSS ANIMATIONS ==== */
+
+/* == CSS Animation: Adds rotating words to cycle through attributes in the Jumbotron section == */
 .rotate{
 	display: inline;
 }
@@ -101,11 +177,12 @@ section {
 	animation: rotateWord 18s linear infinite 0s;
 }
 
-/*Offset text colored to white so that spacing is avalible for responsive design*/
+/* CSS Tweak: Offset text is white/invisible to force spacing for responsive */
 .rotate-block{
-    color: white;
+    color: transparent;
 }
 
+/* CSS Animation: Portion necessary to control timing of each word */
 .rotate-words span:nth-child(2) { 
 	animation-delay: 3s;
 }
@@ -122,6 +199,7 @@ section {
 	animation-delay: 15s;
 }
 
+/* CSS Animation: Portion necessary to define animation == */
 @keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
@@ -132,34 +210,31 @@ section {
     100% { opacity: 0; }
 }
 
-.social-icon {
-    color:black;
+/* == CSS Animation Tweak: Necessary to support YouTube videos in modal window */
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+
 }
 
-.social-twitter:hover {
-    color: #00aced;
+
+/* ==== CSS TWEAKS AND ADJUSTMENTS ==== */
+
+/* == CSS Tweak: Modifies Jumbotron to have an explicit transparent background == */
+.leader {
+    background: transparent;
 }
 
-.social-linkedin:hover {
-    color: #007bb6;
-}
-
-.social-github:hover {
-    color: darkslateblue;
-}
-
-.social-angellist:hover {
-    color:darkgreen;
-}
-
+/* == CSS Tweak: Clarifies that profile image max-height for responsive == */
 .profile-image {
     max-height: 192px;
 }
 
-.mixitupcontainer .mix{
-	display: none;
-}
-
+/* == Defines CSS sprites for company logos on index.html == */
 .patexia-logo, .scoutfitters-logo, .camphisierra-logo, .uscviterbi-logo {
 	background-image: url("../img/company-logo-sprite.png");
     background-repeat: no-repeat;
@@ -168,69 +243,15 @@ section {
     border: 2px solid white;
     border-radius: 8px;
 }
-
-.patexia-logo {
-	background-position: -5px -138px;
-}
-
-.patexia-logo:hover {
-	background-position: -5px -5px;
-    border-color: #2E92D9;
-}
-
-.scoutfitters-logo {
-	background-position: -266px -138px;
-}
-
-.scoutfitters-logo:hover {
-	background-position: -266px -5px;
-    border-color: #004A1D;
-}
-
-.camphisierra-logo {
-	background-position: -527px -138px;
-}
-
-.camphisierra-logo:hover {
-	background-position: -527px -5px;
-    border-color: #292279;
-}
-
-.uscviterbi-logo {
-	background-position: -788px -138px;
-}
-
 .uscviterbi-logo:hover {
 	background-position: -788px -5px;
     border-color: #990000;
 }
 
-.company-image {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    max-height: 192px;
-    max-width: 256px;
-}
-
+/* == CSS Tweak: Forces FontAwesome icons/fonts to appear black when used as a link, and to force the same cursor icon for all links == */
 a.nav-arrow {
     color: black;
 }
-
 a:hover {
     cursor: pointer;
-}
-
-.filter {
-    margin: 2px 1px;
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-     -moz-transition: -moz-transform 0.3s ease-out;
-       -o-transition: -o-transform 0.3s ease-out;
-          transition: transform 0.3s ease-out;
-}
-
-.modal.in .modal-dialog {
-
 }
