@@ -1,3 +1,9 @@
+/*
+    scroll.js - Used in: index.html
+    
+    Code will add smooth scrolling when a section link w/ # tag is used.
+*/
+
 $(document).ready(function () {
     $(".navbar-nav li a").click(function(event) {
         $(".navbar-collapse").collapse('hide');
