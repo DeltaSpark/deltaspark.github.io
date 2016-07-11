@@ -33,6 +33,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- Google Analytics - Staging -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34420495-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </head>
 
@@ -45,7 +55,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="#page-top"
+                   onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'hero'});">
                     Andy Chu
                 </a>
             </div>
@@ -58,16 +69,20 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'about'});">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#background">Strengths</a>
+                        <a class="page-scroll" href="#background"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'background'});">Strengths</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#workplaces">Workplaces</a>
+                        <a class="page-scroll" href="#workplaces"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'workplaces'});">Workplaces</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'contact'});">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +99,8 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Andy Chu</h1>
                         <p class="intro-text">Hi, my name is Andy. I am a startup focused product manager and I build awesome software.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#about" class="btn btn-circle page-scroll"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'about'});">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -110,7 +126,7 @@
             </div>
             <div class="col-lg-7">
                 <p>I’m an accidental product manager, and I love what I do. My passion comes from doing whatever it takes to move the needle for my business. Whether that’s de-escalating an unhappy customer, designing a product spec, or figuring out the right scalable process, I love the challenge of having to work on something new each month.</p>
-                <p>I’m currently a product manager at PatientPop, a comprehensive marketing SaaS solution for healthcare providers. Our mission is to help practices thrive. Oh and by the way, <a href="//boards.greenhouse.io/patientpop?t=heyc5i" target="_blank">we’re hiring</a>.</p>
+                <p>I’m currently a product manager at PatientPop, a comprehensive marketing SaaS solution for healthcare providers. Our mission is to help practices thrive. Oh and by the way, <a href="//boards.greenhouse.io/patientpop?t=heyc5i" target="_blank" onClick="ga('send','event',{eventCategory:'cta',eventAction:'click',eventLabel:'patientpop-jobs'});">we’re hiring</a>.</p>
             </div>
         </div>
     </section>
@@ -127,19 +143,21 @@
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2">
                         <p>Lean and Agile<br/>
-I’ve only known startups, and I can make a bootstrapped budget last. Especially when our runway is counting on it.</p>
+                        I’ve only known startups, and I can make a bootstrapped budget last.</p>
                     </div>
                     <div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2">
                         <p>Start to Done<br/>
-All PMs love starting new projects, but I know that closing them is what helps move the product forward.</p>
+                        New ideas are great, but I'm focused on getting product delivered.</p>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2">
-                        <p>Always Listening<br/>
-My core competencies are dealing with customers and dealing with technology, with a dabble of design.</p>
+                        <p>Always Be Asking<br/>
+                        Assumptions are deadly, and I work hard to always validate mine.</p>
                     </div>
                     <div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2">
                         <p>Data First<br/>
-I consider it a must to think in scalable datasets and extracting business value from them.</p>
+                        People just say they're data driven. I perfer letting Matlab do the talking.</p>
                     </div>
                 </div>
             </div>
@@ -155,32 +173,62 @@ I consider it a must to think in scalable datasets and extracting business value
             <div class="main">
 				<ul id="og-grid" class="og-grid">
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="https://www.patientpop.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'patientpop'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="PatientPop"
+                           data-subtitle="Product Manager - 2016 to present"
+                           data-description="PatientPop is a comprehensive marketing SaaS solution for healthcare providers. We help private practices thrive by acquiring them new patients and deepening the relationship with their existing ones.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="https://www.patexia.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'patexia'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="Patexia"
+                           data-subtitle="Manager, Case Research - 2013 to 2016"
+                           data-description="Patexia is an on-demand crowdsourcing platform specialized in prior art discovery for patent litigation and idea generation for corporate research and development. Our work has created a positive impact for client including Fortune 500 companies and government agencies.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="http://www.scoutfitters.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'scoutfitters'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="SC Outfitters"
+                           data-subtitle="Alumni Advisory Board Member - 2008 to 2012, 2013 to present"
+                           data-description="Created as a capstone project for a leadership class at USC, SC Outfitters is USC’s largest outdoor adventure company (by revenue and by number of trips), all while being completely student-run and profitable.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="http://www.camphi-sierra.org"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'camphisierra'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="Camp Hi-Sierra"
+                           data-subtitle="Program Director - 2007 to 2013"
+                           data-description="A Boy Scout summer resident camp in Long Barn, CA, Camp Hi-Sierra offers 1-week camp sessions for scouts to participate in activities across 12 different themed areas from rifle shooting to ecology to small-boat sailing.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="http://www.sangerlab.org"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'sangerlab'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="SangerLab"
+                           data-subtitle="Research Assistant - 2011 to 2012"
+                           data-description="As a master's student, I worked at SangerLab with Dr. Matteo Bertucco and Professor Terry Sanger studying the kinematics of reaching in children with motor-disabilities while they were interacting with touchscreens.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.patientpop.com" data-largesrc="http://placehold.it/350x150" data-title="Product Manager @ PatientPop" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<a href="http://bme.usc.edu/"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'usc'});"
+                           data-largesrc="http://placehold.it/1000x650"
+                           data-title="USC Viterbi"
+                           data-subtitle="B.S. and M.S. in Biomedical Engineering - Class of 2011 and 2012"
+                           data-description="I graduated in 2011 with my B.S. in Biomedical Engineering with a minor in Political Science, while meeting the academic standard for the Trustee Scholarship. I graduated again in 2012 with my M.S. in Biomedical Engineering, focusing on product development.">
 							<img src="http://placehold.it/350x150" alt="img01"/>
 						</a>
 					</li>
@@ -207,27 +255,45 @@ I consider it a must to think in scalable datasets and extracting business value
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Say Hello</h2>
                     <p>Want to collaborate?<br/><br/>
-                    <a href="href="mailto:contact@andychu.me?subject=Here%27s%20a%20friendly%20hello!"" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> Send me an email</a>
-                    <a href="http://boards.greenhouse.io/patientpop?t=heyc5i" class="btn btn-default btn-lg"><i class="fa fa-briefcase fa-fw"></i> Join us at PatientPop</a></p>
+                    <a href="href="mailto:contact@andychu.me?subject=Here%27s%20a%20friendly%20hello!"" class="btn btn-default btn-lg" onClick="ga('send','event',{eventCategory:'cta',eventAction:'click',eventLabel:'contactme'});"><i class="fa fa-envelope fa-fw"></i> Send me an email</a>
+                    <a href="http://boards.greenhouse.io/patientpop?t=heyc5i" class="btn btn-default btn-lg" onClick="ga('send','event',{eventCategory:'cta',eventAction:'click',eventLabel:'patientpop-jobs'});"><i class="fa fa-briefcase fa-fw"></i> Join us at PatientPop</a></p>
                     <p>&hellip; or find me on social media &hellip;</p>
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twiter.com/DeltaSpark/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://twiter.com/DeltaSpark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'twitter'});">
+                                <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/andybchu" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                            <a href="https://linkedin.com/in/andybchu" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'linkedin'});">
+                                <i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://github.com/DeltaSpark/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://github.com/DeltaSpark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'github'});">
+                                <i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://angel.co/deltaspark" class="btn btn-default btn-lg"><i class="fa fa-angellist fa-fw"></i> <span class="network-name">AngelList</span></a>
+                            <a href="https://angel.co/deltaspark" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'angellist'});">
+                                <i class="fa fa-angellist fa-fw"></i> <span class="network-name">AngelList</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.producthunt.com/@deltaspark" class="btn btn-default btn-lg"><i class="fa fa-product-hunt fa-fw"></i> <span class="network-name">ProductHunt</span></a>
+                            <a href="https://www.producthunt.com/@deltaspark" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'producthunt'});">
+                                <i class="fa fa-product-hunt fa-fw"></i> <span class="network-name">ProductHunt</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/deltaspark/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                            <a href="https://www.instagram.com/deltaspark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'instagram'});">
+                                <i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
