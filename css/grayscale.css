@@ -188,6 +188,7 @@ a:hover, a:focus {
     .intro {
         height: 100%;
         padding: 0;
+        background: url(../img/typing-macbook.jpg) no-repeat bottom center scroll;
     }
 
     .intro .intro-body .brand-heading {
