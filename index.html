@@ -2,249 +2,410 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hi, my name is Andy. I am a startup focused product manager and I build awesome software.">
+    <meta name="author" content="Andy Chu">
+
+    <title>Andy Chu, Product Manager</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
     
-	<title>Andy Chu</title>
+    <!-- Expanding Grid CSS -->
+    <link href="css/component.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather%7CMuli">
-    <link rel="stylesheet" href="./css/style.css">
-    
-    <script async type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script async type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script async type="text/javascript" src="./js/scroll.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34420495-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="pull-left" href="#intro"><img alt="AC" src="./img/monogram.svg" class="img-responsive"></a>
-        </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#whatido">What I Do</a></li>
-            <li><a href="#whereiveworked">Where I've Worked</a></li>
-            <li><a href="#letstalk">Let's Talk</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-    </nav>
-    
-    <div class="container">
-        
-        <!-- Intro - Jumbotron -->
-        <section id="intro">
-            <div class="jumbotron text-center leader">
-                <h2>bringing product together</h2>
-                <img src="./img/circuit.svg" class="center-block img-responsive" alt="Bringing details together">
-                <h2>Hi! I'm Andy and I’m a startup focused product manager.</h2>
-                <h2>My passion is to take all the 
-                <div class="rotate rotate-words">
-                    <span class="rotate-words">user feedback</span>
-                    <span class="rotate-words">feature requests</span>
-                    <span class="rotate-words">user surveys</span>
-                    <span class="rotate-words">brainstorming</span>
-                    <span class="rotate-words">user analytics</span>
-                    <span class="rotate-words">A/B testing</span>
-              </div><span class="rotate-block">____________</span><br>
-                   and make something awesome.</h2>
-                <a class="nav-arrow" href="#aboutme"><i class="fa fa-angle-down fa-3x"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"
+                   onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'hero'});">
+                    Andy Chu
+                </a>
             </div>
-        </section>
-        
-        <!-- About Me -->
-        <section id="aboutme">
-        <div class="row section-header">
-            <div class="col-md-12 text-center">
-                <h1>About Me</h1>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'about'});">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#background"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'background'});">Strengths</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#workplaces"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'workplaces'});">Workplaces</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'contact'});">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#findme"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'findme'});">Say Hello</a>
+                    </li>
+                </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="row">
-            <div class="col-md-9">
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <p><img class="center-block img-responsive img-circle profile-image" src="img/andy-square-profile.jpg" alt="Profile Picture"></p>
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                        <p>As a product manager, I view my job as taking care of all the devilish details so that my team and I can power through specs and wireframes, burn through feature backlogs, and deliver and iterate product as fast as possible.</p>
-                        <p>I live for the energy and passion of startups, but it’s the embracing of all the possibilities and crafting something from the chaos that I love the most.</p>
-                        <p>A Californian through and through, I have roots in the Bay Area and my current home in Los Angeles. When I’m trying to be unproductive, I’m either <a href="//instagram.com/p/hKwciEA9bx/" target="_blank">playing with the dog</a>, trying something new on <a href="//www.producthunt.com/@deltaspark" target="_blank">ProductHunt</a>, or working out my feelings with Star Wars Legos.</p>
+                    <div class="col-md-10 col-md-offset-1">
+                        <h1 class="brand-heading">Andy Chu</h1>
+                        <h2>a startup product manager in Los Angeles</h2>
+                        <img src="img/circuit.svg" alt="Andy Chu" class="center-block img-responsive">
+                        <p class="intro-text">Hi, my name is Andy. I am a startup focused product manager and I build awesome software.</p>
+                        <a href="#about" class="btn btn-circle page-scroll"
+                           onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'about'});">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-center">
-                <h3>Follow Me</h3>
-                <a href="//twiter.com/DeltaSpark/" target="_blank">
-                    <span class="fa-stack fa-lg social-icon social-twitter">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//linkedin.com/in/andybchu" target="_blank">
-                    <span class="fa-stack fa-lg social-icon social-linkedin">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//github.com/DeltaSpark/" target="_blank">
-                    <span class="fa-stack fa-lg social-icon social-github">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//angel.co/deltaspark" target="_blank">
-                    <span class="fa-stack fa-lg social-icon social-angellist">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-angellist fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
         </div>
-        </section>
         
-        <!-- What I Do -->
-        <section id="whatido">
-        <div class="row section-header">
-            <div class="col-md-12 text-center">
-                <h1>What I Do</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <img src="./img/patexia.png" alt="Patexia Inc." class="img-responsive center-block">
-                <p>As a Case Research Manager at Patexia, I work at a dual-market facing startup. I leverage our community of subject matter experts on one hand, to provide crowdsourced solutions to vexing IP and technological problems for our corporate clients on the other. My work has created a positive impact for clients including Fortune 500 companies and government agencies.</p>
-                <p class="text-right"><a class="btn btn-primary" href="./cmp/patexia.html" role="button">Learn More</a></p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <img src="./img/scoutfitters.png" alt="SC Outfitters" class="img-responsive center-block">
-                <p>With SC Outfitters, I serve on the Alumni Advisory Board where I contribute the lessons I’ve learned as a product manager at a startup to help the student organization continue to offer outdoor adventures to the USC student body.</p>
-                <p class="text-right"><a class="btn btn-primary" href="./cmp/scoutfitters.html" role="button">Learn More</a></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>Here’s the tools and skills that are in my personal toolbox:
-                <span class="label label-default">distributed teams (Upwork)</span>
-                <span class="label label-default">ticketing (JIRA)</span>
-                <span class="label label-default">project scoping (Confluence)</span>
-                <span class="label label-default">wireframing (Balsamiq/InVision)</span>
-                <span class="label label-default">process design (Visio)</span>
-                <span class="label label-default">graphic design (GIMP 2/Illustrator)</span>
-                <span class="label label-default">infographics design (Visio)</span>
-                <span class="label label-default">data analysis (MATLAB)</span>
-                <span class="label label-default">marketing/transactional email design (HTML)</span>
-                <span class="label label-default">passive/real time user tracking (Google Analytics)</span>
-                <span class="label label-default">Google App Engine</span>
-                <span class="label label-default">dual-market startups</span>
-                <span class="label label-default">motion capture (flock of birds)</span>
-                <span class="label label-default">computer vision (Kinect/LabVIEW)</span></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center"><h3>Want to learn more?</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p class="text-center">
-                    <a class="btn btn-primary" href="#whereiveworked" role="button"><i class="fa fa-angle-down"></i> See Where I've Worked</a> or
-                    <a class="btn btn-primary" href="./img/andy-chu-resume.pdf" role="button" target="_blank"><i class="fa fa-file-text"></i> See my Resume</a> or
-                    <a class="btn btn-primary" href="//linkedin.com/in/andybchu" role="button" target="_blank"><i class="fa fa-linkedin"></i> Visit my LinkedIn</a>
-                </p></div>
-        </div>
-        </section>
-        
-        <!-- Where I've Worked -->
-        <section id="whereiveworked">
-        <div class="row section-header">
-            <div class="col-md-12 text-center">
-                <h1>Where I've Worked</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center">(click or tap on one to learn more)</p>
-                <span class="flex-container text-center">
-                    <div class="flex-item">
-                        <a href="./cmp/patexia.html"><div alt="Patexia Inc." class="center-block patexia-logo"></div></a>
-                    </div>
-                    <div class="flex-item">
-                        <a href="./cmp/scoutfitters.html"><div alt="Patexia Inc." class="center-block scoutfitters-logo"></div></a>
-                    </div>
-                    <div class="flex-item">
-                        <a href="./cmp/camphisierra.html"><div alt="Patexia Inc." class="center-block camphisierra-logo"></div></a>
-                    </div>
-                    <div class="flex-item">
-                        <a href="./cmp/uscviterbi.html"><div alt="Patexia Inc." class="center-block uscviterbi-logo"></div></a>
-                    </div>
-                </span>
-            </div>
-        </div>
-        </section>
-        
-        <!-- Let's Talk -->
-        <section id="letstalk">
-        <div class="row section-header">
-            <div class="col-md-12 text-center">
-                <h1>Let's Talk</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p>Send me a friendly hello ...</p>
-                <p><a class="btn btn-primary" href="mailto:contact@andychu.me?subject=Here%27s%20a%20friendly%20hello!" target="_blank" role="button"><i class="fa fa-envelope-o fa-lg"></i> Send Me An Email</a></p>
-                <p>... or find me on social media ...</p>
-                <p><a href="//twiter.com/DeltaSpark/" target="_blank">
-                    <span class="fa-stack social-icon social-twitter">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//linkedin.com/in/andybchu" target="_blank">
-                    <span class="fa-stack social-icon social-linkedin">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//github.com/DeltaSpark/" target="_blank">
-                    <span class="fa-stack social-icon social-github">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//angel.co/deltaspark" target="_blank">
-                    <span class="fa-stack social-icon social-angellist">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-angellist fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a></p>
-                <p>Thanks for coming by, and I hope to see you around!</p>
-            </div>
-        </div>
-        </section>
-    </div>
+        <!-- Video Background -->
+        <video autoplay loop poster="img/typing-macbook.jpg" id="video-background">
+            <source src="img/typing-macbook.webm" type="video/webm">
+            <source src="img/typing-macbook.ogv" type="video/ogg">
+            <source src="img/typing-macbook.mp4" type="video/mp4">
+        </video>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="container content-section">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h3>About Me</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-lg-offset-1">
+                <img src="img/andy-chu-profile.jpeg" alt="Andy Chu, Product Manager" class="center-block img-responsive img-rounded">
+            </div>
+            <div class="col-lg-7">
+                <p>I’m a product manager, and I love what I do. My passion comes from solving tough problems in order to move the needle for my business. Whether that’s de-escalating an unhappy customer, designing a product spec, or figuring out the right scalable process, I love the challenge of tackling the unpredictable and making it work.</p>
+                <p>I’m currently a product manager at PatientPop, a comprehensive marketing SaaS solution for healthcare providers. Our mission is to help practices thrive.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Background Section -->
+    <section id="background" class="content-section text-center">
+        <div class="background-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h3>My Product Strengths</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2">
+                        <img src="img/scrum.svg" alt="Agile" class="center-block img-responsive strength-icon">
+                        <p>Lean and Agile<br/>
+                        I’ve only known startups, and I can make a bootstrapped budget last.</p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2">
+                        <img src="img/flowchart.svg" alt="Project Management" class="center-block img-responsive strength-icon">
+                        <p>Start to Done<br/>
+                        New ideas are great, but I'm focused on getting product delivered.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2">
+                        <img src="img/network.svg" alt="Collaborate" class="center-block img-responsive strength-icon">
+                        <p>Always Be Asking<br/>
+                        Assumptions are deadly; I work hard to validate my team's and mine.</p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2">
+                        <img src="img/linegraph.svg" alt="Plot" class="center-block img-responsive strength-icon">
+                        <p>Data First<br/>
+                        People say they're data driven. I prefer letting Matlab do the talking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workplaces Section -->
+    <section id="workplaces" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>My Workplaces and Projects</h3>
+            </div>
+            <div class="main">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="https://www.patientpop.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'patientpop'});"
+                           data-largesrc="img/patientpop-image.jpg"
+                           data-title="PatientPop"
+                           data-subtitle="Product Manager - 2016 to present"
+                           data-description="PatientPop is a comprehensive marketing SaaS solution for healthcare providers. We help private practices thrive by acquiring them new patients and deepening the relationship with their existing ones.">
+							<img src="img/patientpop.png" alt="PatientPop Inc." class="img-rounded"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.patexia.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'patexia'});"
+                           data-largesrc="img/patexia-image.jpg"
+                           data-title="Patexia"
+                           data-subtitle="Manager, Case Research - 2013 to 2016"
+                           data-description="Patexia is an on-demand crowdsourcing platform specialized in prior art discovery for patent litigation and idea generation for corporate research and development. Our work has created a positive impact for clients including Fortune 500 companies and government agencies.">
+							<img src="img/patexia.png" alt="Patexia Inc." class="img-rounded"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.scoutfitters.com"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'scoutfitters'});"
+                           data-largesrc="img/scoutfitters-image.jpg"
+                           data-title="SC Outfitters"
+                           data-subtitle="Alumni Advisory Board Member - 2008 to 2012, 2013 to present"
+                           data-description="Created as a capstone leadership class project, SC Outfitters is USC’s largest outdoor adventure company (by revenue and by number of trips), all while being completely student-run and profitable.">
+							<img src="img/scoutfitters.png" alt="SC Outfitters" class="img-rounded"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.camphi-sierra.org"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'camphisierra'});"
+                           data-largesrc="img/camphisierra-image.jpg"
+                           data-title="Camp Hi-Sierra"
+                           data-subtitle="Program Director - 2007 to 2013"
+                           data-description="A Boy Scout summer resident camp in Long Barn, CA, Camp Hi-Sierra offers 1-week camp sessions for scouts to participate in activities across 12 different themed areas from rifle shooting to ecology to small-boat sailing.">
+							<img src="img/camphisierra.png" alt="Camp Hi-Sierra" class="img-rounded"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.sangerlab.org"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'sangerlab'});"
+                           data-largesrc="img/sangerlab-image.jpg"
+                           data-title="SangerLab"
+                           data-subtitle="Research Assistant - 2011 to 2012"
+                           data-description="As a master's student, I worked at SangerLab with Dr. Matteo Bertucco and Professor Terry Sanger studying the kinematics of reaching in children with motor-disabilities while they were interacting with touchscreens.">
+							<img src="img/sangerlab.png" alt="USC SangerLab" class="img-rounded"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://bme.usc.edu/"
+                           onClick="ga('send','event',{eventCategory:'workplaces',eventAction:'click',eventLabel:'usc'});"
+                           data-largesrc="img/uscviterbi-image.jpg"
+                           data-title="USC Viterbi"
+                           data-subtitle="B.S. and M.S. in Biomedical Engineering - Class of 2011 and 2012"
+                           data-description="I graduated in 2011 with my B.S. in Biomedical Engineering with a minor in Political Science, while meeting the academic standard for the Trustee Scholarship. I graduated again in 2012 with my M.S. in Biomedical Engineering, focusing on product development.">
+							<img src="img/uscviterbi.png" alt="USC Viterbi School of Engineering" class="img-rounded"/>
+						</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="contact-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-1">
+                    <h3>Let's work together!</h3>
+                    <p>Got something I can help with? Send me a message and let's get started on a project together.</p>
+                </div>
+                <div class="col lg-2">
+                    <ul class="list-unstyled banner-social-buttons">
+                        <li>
+                            <a href="mailto:contact@andychu.me?subject=Here%27s%20a%20friendly%20hello!" class="btn btn-default btn-lg" onClick="ga('send','event',{eventCategory:'cta',eventAction:'click',eventLabel:'contactme'});"><i class="fa fa-envelope fa-fw"></i> Send me an email</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?text=%40DeltaSpark%20We%20should%20get%20in%20touch!" class="btn btn-default btn-lg" onClick="ga('send','event',{eventCategory:'cta',eventAction:'click',eventLabel:'sendtweet'});"><i class="fa fa-twitter fa-fw"></i> Send me a tweet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Find Me Section -->
+    <section id="findme" class="content-section">
+        <div class="findme-section">
+            <div class="container">
+                <div class="col-lg-4">
+                    <h3 class="text-center">Say Hello</h3>
+                    <p class="text-center">I'm always looking for great people to work with.<br/>
+                    Join me on a project I'm working on, or connect with me on social media!</p>
+                    <img src="img/monogram.svg" alt="Andy Chu" class="center-block img-responsive">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h4>Let's collaborate</h4>
+                    <ul class="list-unstyled banner-social-buttons">
+                        <li>
+                            <a href="http://boards.greenhouse.io/patientpop?t=heyc5i" class="btn btn-default btn-lg" onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'patientpop-jobs'});"><i class="fa fa-briefcase fa-fw"></i> Join us at PatientPop</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/DeltaSpark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'github'});">
+                                <i class="fa fa-github fa-fw"></i> <span class="network-name">Code with me on Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h4>Find me on social media</h4>
+                    <ul class="list-unstyled banner-social-buttons">
+                        <li>
+                            <a href="https://twiter.com/DeltaSpark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'twitter'});">
+                                <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/andybchu" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'linkedin'});">
+                                <i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://angel.co/deltaspark" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'angellist'});">
+                                <i class="fa fa-angellist fa-fw"></i> <span class="network-name">AngelList</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.producthunt.com/@deltaspark" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'producthunt'});">
+                                <i class="fa fa-product-hunt fa-fw"></i> <span class="network-name">ProductHunt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/deltaspark/" class="btn btn-default btn-lg"
+                               onClick="ga('send','event',{eventCategory:'social',eventAction:'click',eventLabel:'instagram'});">
+                                <i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <p class="navbar-text text-muted">Built from scratch using <a href="//pages.github.com" target="_blank">GitHub Pages</a>, <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="//fontawesome.io" target="_blank">Font Awesome</a>, <a href="//embed.ly/cards" target="_blank">Embed.ly Cards</a>, and <a href="//mixitup.kunkalabs.com/" target="_blank">MixItUp 2</a>. Check out the <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank">source code here</a>.</p>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11">
+                    <p>Built from the <a href="//github.com/BlackrockDigital/startbootstrap-grayscale" target="_blank">Grayscale Bootstrap Theme</a> using <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="//fontawesome.io" target="_blank">Font Awesome</a>, and <a href="//github.com/codrops/ThumbnailGridExpandingPreview" target="_blank">Thumbnail Grid with Expanding Preview</a>.</p>
+                    <p>Icons from <a href="//thenounproject.com/" target="_blank">The Noun Project</a> by Björn Andersson, Michael Wohlwend, Marvin Wilhelm, and Lee.</p>
+                </div>
+                <div class="col-lg-1">
+                    <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    <!-- Schma Section -->
+    <script type="application/ld+json">
+        { "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Andy Chu",
+          "url": "https://www.andychu.me/",
+          "description": "A startup product manager in Los Angeles",
+          "image": "https://www.andychu.me/img/andy-chu-profile.jpeg",
+          "jobTitle": "Product Manager",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "PatientPop",
+            "logo": "http://i.stack.imgur.com/sWULp.jpg",
+            "url": "https://www.patientpop.com",
+            "description": "PatientPop is the most advanced marketing platform for doctors, dentists, and healthcare providers. Reach new patients. Grow revenues. Join PatientPop today.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1221 2nd Street #400",
+                "addressLocality": "Santa Monica",
+                "addressRegion": "CA",
+                "postalCode": "90401",
+                "addressCountry": "USA"
+            }
+          },
+          "sameAs": [ "https://twiter.com/DeltaSpark/",
+              "https://linkedin.com/in/andybchu",
+              "https://github.com/DeltaSpark/",
+              "https://angel.co/deltaspark",
+              "https://www.producthunt.com/@deltaspark",
+              "https://www.instagram.com/deltaspark/"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "addressCountry": "USA"
+          }
+        }
+    </script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script type="text/javascript" src="js/grayscale.js"></script>
+    
+    <!-- Expanding Grid JavaScript -->
+    <script type="text/javascript" src="js/grid.js"></script>
+    <script>
+        $(function() {Grid.init();});
+    </script>
 
 </body>
+
 </html>

@@ -5,9 +5,9 @@
 	 height="100px" viewBox="0 0 500 100" style="enable-background:new 0 0 500 100;" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
-	.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st1{stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#fff;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
 ]]>
 </style>
 <g id="Layer_1">

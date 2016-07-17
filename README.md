@@ -3,7 +3,6 @@ Welcome! You've found the guts to [my website](https://andychu.me). This website
 
 - showcase my work
 - write and design my personal website from scratch
-- force myself to use Git
 - have a space to test out UI elements and features in the future
 
 ## Who Is This For?
@@ -34,8 +33,8 @@ This website was built using these components (which are awesome and I'm thankfu
 - served over [CloudFlare's CDN](https://www.cloudflare.com/)
 - framework by [Bootstrap](https://getbootstrap.com/)
 - icons by [Font Awesome](http://fontawesome.io/)
-- embeds and external links by [Embed.ly Cards](https://embed.ly/cards)
-- sortable portfolio by [MixItUp 2](https://mixitup.kunkalabs.com/)
+- templates and techniques from [Grayscale Bootstrap Theme](http://github.com/BlackrockDigital/startbootstrap-grayscale) and [Thumbnail Grid with Expanding preview](http://github.com/codrops/ThumbnailGridExpandingPreview)
+- icons from [The Noun Project](https://thenounproject.com/)
 - 404 tumbeast by [The Oatmeal](http://theoatmeal.com/comics/state_web_summer#tumblr)
 
 ## License

@@ -2,113 +2,97 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andy Chu">
     <meta name="robots" content="noindex">
+
+    <title>Yeah. That's a 404.</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
-	<title>Yeah. That's a 404.</title>
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather%7CMuli">
-    <link rel="stylesheet" href="/css/style.css">
-    
-    <script async type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script async type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34420495-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="pull-left" href="/index.html"><img alt="AC" src="/img/monogram.svg" class="img-responsive"></a>
-        </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/index.html#aboutme">About Me</a></li>
-            <li><a href="/index.html#whatido">What I Do</a></li>
-            <li><a href="/index.html#whereiveworked">Where I've Worked</a></li>
-            <li><a href="/index.html#letstalk">Let's Talk</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-404 navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"
+                   onClick="ga('send','event',{eventCategory:'navbar',eventAction:'click',eventLabel:'hero'});">
+                    Andy Chu
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
     </nav>
-    
-    <div class="container">
-        
-        <!-- 404 Section-->
-        <section id="404">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1>404: Page Not Found.</h1>
-                <img src="/assets/there-go-the-servers.png" class="center-block img-responsive" alt="The tumbeasts are loose!">
-                <p>Great. It looks like someone let the tumbeast loose again. And it looks like George there is running away with the page that you've requested.</p>
-                <p>Yeah, I'm  going to be honest. I don't think we're going to get that page back.</p>
-            </div>
-        </div>
-        </section>
-        
-        
-        <!-- Let's Talk -->
-        <section id="letstalk">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Great. Now what?</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p>Well, since you're here, maybe you want to learn more about me and what I do ...</p>
-                <p><a class="btn btn-primary" href="/index.html" role="button"><i class="fa fa-home fa-lg"></i> Learn about Andy Chu</a></p>
-                <p>... or maybe you were trying to find me on social media ...</p>
-                <p><a href="//twiter.com/DeltaSpark/">
-                    <span class="fa-stack fa-2x social-icon social-twitter">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//linkedin.com/in/andybchu">
-                    <span class="fa-stack fa-2x social-icon social-linkedin">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//github.com/DeltaSpark/">
-                    <span class="fa-stack fa-2x social-icon social-github">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="//angel.co/deltaspark">
-                    <span class="fa-stack fa-2x social-icon social-angellist">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-angellist fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a></p>
-                <p>I hope you find what you were looking for! Now excuse me, I have some tumbeast to catch...</p>
-            </div>
-        </div>
-        </section>
-    </div>
 
-    
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Yikes. Well That Escalated Quickly.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="img/tumbeast.png" alt="There go the servers..." class="center-block img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>404: Page Not Found</h2>
+                <p>You're definitely on the wrong page and those Tumbeasts aren't going to let those servers go.<br/>Let's back away slowly...</p>
+                <a href="index.html" class="btn btn-default-404 btn-lg"><i class="fa fa-home fa-fw"></i> Back to AndyChu.me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <p class="navbar-text text-muted">Built from scratch using <a href="//pages.github.com" target="_blank">GitHub Pages</a>, <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="//fontawesome.io" target="_blank">Font Awesome</a>, <a href="//embed.ly/cards" target="_blank">Embed.ly Cards</a>, and <a href="//mixitup.kunkalabs.com/" target="_blank">MixItUp 2</a>. Check out the <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank">source code here</a>. Tumbeast gently borrowed from <a href="//theoatmeal.com/comics/state_web_summer#tumblr" target="_blank">Matthew Inman of The Oatmeal</a>.</p>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11">
+                    <p>Built from the <a href="//github.com/BlackrockDigital/startbootstrap-grayscale" target="_blank">Grayscale Bootstrap Theme</a> using <a href="//getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="//fontawesome.io" target="_blank">Font Awesome</a>, and <a href="//github.com/codrops/ThumbnailGridExpandingPreview" target="_blank">Thumbnail Grid with Expanding Preview</a>.</p>
+                    <p>Tumbeasts from <a href="https://theoatmeal.com/comics/state_web_summer#tumblr" target="_blank">Matthew Inman of The Oatmeal</a>.</p>
+                </div>
+                <div class="col-lg-1">
+                    <a href="//github.com/DeltaSpark/deltaspark.github.io" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    
 
 </body>
+
 </html>
