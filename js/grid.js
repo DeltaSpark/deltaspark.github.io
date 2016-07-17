@@ -345,7 +345,7 @@ var Grid = (function() {
 			this.$title = $( '<h3></h3>' );
 			this.$subtitle = $( '<h4 style="margin-bottom: 10px;"></h4>' );
 			this.$description = $( '<p style="margin-bottom: 5px;"></p>' );
-			this.$href = $( '<a href="#">Visit website</a>' );
+			this.$href = $( '<a href="#" target="_blank" onClick="ga(\'send\',\'event\',{eventCategory:\'workplace-detail\',eventAction:\'click\',eventLabel:\'outbound-link\'});">Visit website</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$subtitle, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
