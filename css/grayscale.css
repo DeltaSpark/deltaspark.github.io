@@ -301,22 +301,6 @@ a:hover, a:focus {
     height: 128px;
 }
 
-.contact-section {
-    width: 100%;
-    color: #fff;
-    padding: 50px 0;
-    background: #590000 no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Adjustment necessary to the contact section to adopt background of the CTA*/
-#findme {
-    background: #590000;
-}
-
 .findme-section {
     width: 100%;
     color: #fff;
